@@ -36,8 +36,8 @@ max-width: 100%;
 height: auto;
 }
 .container {
-width: 1158px;
-padding: 0 15px 0 15px;
+width: 320px;
+padding: 0 16px 0 16px;
 margin: 0 auto;
 }
 
@@ -55,7 +55,6 @@ align-items: center;
 display: flex;
 flex-grow: 1;
 align-items: center;
-    
 }
 .header-logo { 
 font-family: "Raleway", sans-serif;
@@ -154,14 +153,14 @@ margin: 0 auto;
 }
 .hero-title {
 font-weight: 700;
-font-size: 56px;
-line-height: 1.07;
+font-size: 36px;
+line-height: 111%;
 letter-spacing: 0.02em;
 text-align: center;
 color: #fff;
 margin: 0 auto;
 max-width: 496px;
-margin-bottom: 48px;
+margin-bottom: 72px;
 }
 .hero-btn {
 background: #4d5ae5;
@@ -189,8 +188,8 @@ background-color: #404BBF;
 
 /*== Advantages 2==*/
 .main-about {
-padding-top: 120px;
-padding-bottom: 120px;
+width: 100%;
+gap: 72px;
 }
 .visually-hidden {
 position: absolute;
@@ -206,15 +205,16 @@ overflow: hidden;
 }
 .main-about-list  {
 display: flex; 
-gap: 24px;
+flex-wrap: wrap;
+gap:72px;
+margin-top: 96px;
+margin-bottom: 96px;
 }
 .main-about-title .main-icons {
 visibility: hidden;
-    /*width:calc((100% - 3*24px)/4);*/
 }
-
 .main-link-icons{
-display: flex;
+display: none;
 justify-content: center;
 align-items: center;
 border: 1px solid #8e8f99;
@@ -227,27 +227,28 @@ margin-bottom: 8px;
 
 .main-about-name {
 font-family: "Roboto", sans-serif;
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
+font-weight: 700;
+font-size: 36px;
+line-height: 111%;
 letter-spacing: 0.02em;
 color: #2e2f42;
+text-align: center;
 margin-bottom: 8px;
 }
 .main-about-text {
 font-family: "Roboto", sans-serif;
-font-weight: 400;
+font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
-}
+} 
 
 /*===  Our Team 3  ===*/
 .our-team {
 background: #f4f4fd;
-padding-top: 120px;
-padding-bottom: 120px;
+padding-top: 96px;
+padding-bottom: 96px;
 }
 .team {
 font-weight: 700;
@@ -260,8 +261,10 @@ text-transform: capitalize;
 margin-bottom:72px;
 }
 .team-list {
-display: flex;
-gap: 24px;
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 72px;
 }
 .team-item {
 background: #fff;
@@ -324,8 +327,8 @@ background-color:#404bbf;
 /*===Portfolio 4==*/
 .portfolio {
 background-color: #FFFFFF;
-padding-top: 120px;
-padding-bottom: 120px;
+padding-top: 101px;
+padding-bottom: 96px;
 }
 .portfolio-about{
 font-weight: 700;
@@ -335,17 +338,14 @@ letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
 text-transform: capitalize;
-/*margin-bottom: 72px;*/
+margin-bottom: 67px;
 }
 .portfolio-list{
 display: flex;
 flex-wrap: wrap;
-    /*gap: 48px 24px;*/
-column-gap: 24px;
-row-gap: 48px;
+gap: 48px;
 }
 .portfolio-item{
-width:calc((100% - 2*24px)/3);
 position: relative;
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -411,14 +411,20 @@ overflow: hidden;
 /*=== Footer===*/
 .footer {
 background-color: #2e2f42;
-padding: 100px 0;
+
 }
 .wrap{
 display:flex;
-align-items: baseline;
+flex-wrap: wrap;
+
+gap: 72px;
+padding-top: 96px;
+padding-bottom: 96px;
+
 }
 .footer-wrap {
-margin-right: 120px;
+/*margin-right: 120px;*/
+margin: 0 auto;
 }
 .footer-logo-color {
 font-family: "Raleway", sans-serif;
@@ -428,6 +434,7 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #f4f4fd;
+
 }
 .footer-logo{
 font-family: "Raleway", sans-serif;
@@ -437,6 +444,9 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 display: inline-block;
+margin-bottom: 16px;
+margin-left: 86px;
+
 }
 .footer-text {
 font-weight: 500;
@@ -445,10 +455,21 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #FFFFFF;
 max-width: 264px;
+}
+.footer-text-social {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+max-width: 264px;
 margin-bottom: 16px;
+text-align: center;
 }
 .footer-social {
-margin-right: 80px;
+/*margin-right: 80px;*/
+margin: 0 auto;
+
 }
 .footer-icon-list{
 display: flex;
@@ -478,8 +499,13 @@ background-color:#31d0aa;
 }
 .footer-wrap, .footer-social{
 display: inline-block;
+align-items: center;
+justify-content: center;
 }
-
+.footer-div-wrap{
+align-items: center;
+justify-content: center;
+}
 .footer-title{
 font-weight: 500;
 font-size: 16px;
@@ -487,12 +513,17 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #fff;
 margin-bottom: 16px;
+text-align: center;
 }
 .footer-form{
 display: flex;
-justify-content: space-between;
+flex-wrap: wrap;
+/*justify-content: space-between;*/
 align-items: center;
 gap: 24px;
+}
+.footer-label{
+margin: 0 auto;
 }
 .footer-input{
 width: 264px;
@@ -524,6 +555,7 @@ line-height: 150%;
 letter-spacing: 0.04em;
 text-align: center;
 color: #FFF;
+margin: 0 auto;
 }
 .icon-send {
 margin-left: 16px;
@@ -749,4 +781,104 @@ fill: #F4F4FD;;
 .modal-check:focus+.check-text>.check-empty {
 background-color: #404bbf;
 
+}
+@media screen and (min-width:768px) {
+.container{
+width: 768px;
+}  
+.hero-title{
+font-size: 56px;
+line-height: 1.07;
+margin-bottom: 22px;
+}
+.main-about-list{
+gap: 72px 24px;
+}
+.main-link{
+width: calc((100% - 24px)/2);
+}
+.main-about-name{
+text-align:start;
+}
+.team-list{
+gap: 64px 24px;
+}
+.team-item{
+padding: 0;
+}
+.portfolio{
+padding-top: 96px;
+padding-bottom: 96px;
+}
+.portfolio-about{
+margin-bottom: 72px;
+}
+.portfolio-list{
+gap: 72px 24px;
+}
+.portfolio-item{
+width: calc((100% - 24px)/2);
+}
+.wrap {
+align-items: baseline;
+}
+
+}
+
+
+@media screen and (min-width:1200px) {
+.container{
+width: 1158px;
+padding: 0 15px 0 15px;
+} 
+.hero-title{
+margin-bottom: 48px;
+}
+.main-about{
+padding-top: 120px;
+padding-bottom: 120px;
+}
+.main-about-list{
+flex-wrap: nowrap;
+gap: 24px;
+}
+.main-about-name{
+font-weight: 500;
+font-size: 20px;
+line-height: 120%;
+}
+.main-about-text{
+font-weight: 400;
+}
+.main-link-icons{
+display: flex;
+}
+.our-team{
+padding-top: 120px;
+padding-bottom: 120px;
+}
+.team-list{
+gap: 24px;
+}
+.team-list{
+padding: 0;
+}
+.portfolio {
+padding-top: 120px;
+padding-bottom: 120px;
+}
+.portfolio-list{
+gap: 48px;
+column-gap: 24px;
+row-gap: 48px;
+}
+.portfolio-item{
+width:calc((100% - 2*24px)/3);
+}
+.footer{
+padding: 100px 0;
+}
+.footer-wrap{
+margin-right: 120px;
+}
 }
